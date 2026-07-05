@@ -44,21 +44,33 @@ export default function Hero() {
         </div>
         <div className="relative">
           <div className="absolute -inset-5 rounded-[2.5rem] bg-stoneGold/15 blur-3xl" />
-          <div className="premium-card relative overflow-hidden p-5">
-            <div className="relative flex aspect-square items-end overflow-hidden rounded-[2rem] p-6">
-              <Image
-                src="/images/nader-najafi-profile.jpg"
-                alt="تصویر حرفه‌ای نادر نجفی، استادکار نصب اسلب، کاشی و سنگ"
-                fill
-                priority
-                sizes="(min-width: 1024px) 45vw, 100vw"
-                className="object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/35 to-transparent" />
-              <div className="relative z-10 w-full rounded-3xl border border-white/15 bg-ink/70 p-6 backdrop-blur">
+          <div className="premium-card relative overflow-hidden p-3 sm:p-5">
+            <div className="relative overflow-hidden rounded-[2rem]">
+              <div className="relative aspect-[4/5] overflow-hidden sm:aspect-square lg:aspect-square">
+                <Image
+                  src="/images/nader-najafi-profile.jpg"
+                  alt="تصویر حرفه‌ای نادر نجفی، استادکار نصب اسلب، کاشی و سنگ"
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 45vw, 100vw"
+                  className="object-cover object-top"
+                />
+                <div className="absolute inset-0 hidden bg-gradient-to-t from-ink/90 via-ink/35 to-transparent lg:block" />
+                <div className="absolute inset-x-0 bottom-0 z-10 hidden p-4 sm:p-6 lg:block">
+                  <div className="rounded-3xl border border-white/15 bg-ink/70 p-4 backdrop-blur sm:p-6">
+                    <p className="text-sm font-semibold text-stoneGold">تصویر استادکار / پروژه</p>
+                    <h2 className="mt-2 text-2xl font-black text-white">اجرای اسلب، سنگ و کاشی با جزئیات دقیق</h2>
+                    <p className="mt-3 leading-7 text-marble/70">
+                      ویدیوهای واقعی پروژه‌ها و نمونه‌کارهای اجرایی در صفحه اینستاگرام
+                      @{contact.instagram} موجود است.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-4 rounded-[1.5rem] border border-white/10 bg-ink/70 p-4 backdrop-blur sm:p-6 lg:hidden">
                 <p className="text-sm font-semibold text-stoneGold">تصویر استادکار / پروژه</p>
-                <h2 className="mt-2 text-2xl font-black text-white">اجرای اسلب، سنگ و کاشی با جزئیات دقیق</h2>
-                <p className="mt-3 leading-7 text-marble/70">
+                <h2 className="mt-2 text-xl font-black text-white">اجرای اسلب، سنگ و کاشی با جزئیات دقیق</h2>
+                <p className="mt-3 leading-7 text-sm text-marble/70 sm:text-base">
                   ویدیوهای واقعی پروژه‌ها و نمونه‌کارهای اجرایی در صفحه اینستاگرام
                   @{contact.instagram} موجود است.
                 </p>
